@@ -1,3 +1,31 @@
+@font-face {
+    font-family: "League Spartan";
+    src: url(../fonts/LeagueSpartan-Bold.woff2) format("woff2"),
+        url(../fonts/LeagueSpartan-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(../fonts/LeagueSpartan-Medium.woff2) format("woff2"),
+        url(../fonts/LeagueSpartan-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --brand-color: #5ca5a5;
+    --text-color: #7c8f8f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -16,11 +44,11 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    font-family: "Arial", sans-serif;
-    line-height: 1.5;
+    font-size: 15px;
+    font-family: "League Spartan", "Arial", sans-serif;
+    line-height: 24px;
     background-color: #fff;
-    color: #222;
+    color: var(--text-color);
 }
 
 img {
@@ -30,13 +58,27 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1366px;
+    padding-left: 128px;
+    padding-right: 128px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #f2f2f2;
 }
 
+
+/* Header styles */
+.site-header {
+    width: 100%;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 156px;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 /* Main content */
 .main-content {
     flex-grow: 1;
