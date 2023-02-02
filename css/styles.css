@@ -126,12 +126,16 @@ img {
 
 .logo-img {
     display: flex;
+    flex-shrink: 0;
     width: 88px;
     height: 88px;
     margin-right: 24px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .job-content {
+    flex-grow: 1;
     width: 100%;
     max-width: 266px;
 }
@@ -141,6 +145,7 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
+    flex-grow: 1;
 }
 /* Job content heading */
 .job-content-heading {
@@ -186,12 +191,14 @@ background-color: #000;
 .time-box {
     display: flex;
     align-items: center;
+    flex-shrink: 1;
 }
 
 .time-text:not(:last-child) {
     margin-right: 20px;
 }
 .time-text {
+    white-space: nowrap;
     font-weight: 500;
     letter-spacing: -0.12px;
 }
@@ -208,6 +215,11 @@ background-color: #000;
     content: "";
 }
 
+/* button styles */
+.btn-box {
+    display: flex;
+    align-items: center;
+}
 .select-btn {
     border: transparent;
     background-color: #d5ece6;
