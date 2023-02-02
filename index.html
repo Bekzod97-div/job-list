@@ -13,24 +13,36 @@
 <body>
     <header class="site-header"></header>
 
-    <main class="main-content">
-        <article class="job-card">
-            <img class="logo-img" src="./img/photosnap.svg" alt="photosnap-logo" width="88" height="88">
-            <div class="job-content">
-                <div class="features-box">
-                    <a href="#" class="features-link">Photosnap</a>
-                    <span class="new">new!</span>
-                    <span class="features">featured</span>
-                </div>
-                <a class="job-content-heading">Senior Frontend Developer</a>
-                <div class="time-box">
-                    <span class="time-text">1d ago</span>
-                    <span class="time-text">Full Time</span>
-                    <span class="time-text">USA only</span>
-                </div>
-            </div>
-        </article>
-    </main>
+    <div class="container">
+        <main class="main-content">
+            <section class="job-list">
+                <h1 class="visually-hidden">Job list</h1>
+                <article class="job-card">
+                    <img class="logo-img" src="./img/photosnap.svg" alt="photosnap-logo" width="88" height="88">
+                    <div class="job-content">
+                        <div class="features-box">
+                            <h3 class="job-content-heading">Photosnap</h3>
+                            <span class="new">new!</span>
+                            <span class="features">featured</span>
+                        </div>
+                        <a href="#" class="features-link" >Senior Frontend Developer</a>
+                        <div class="time-box">
+                            <span class="time-text">1d ago</span>
+                            <span class="time-text">Full Time</span>
+                            <span class="time-text">USA only</span>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="select-btn" type="button">Frontend</button>
+                        <button class="select-btn" type="button">Senior</button>
+                        <button class="select-btn" type="button">HTML</button>
+                        <button class="select-btn" type="button">CSS</button>
+                        <button class="select-btn" type="button">JavaScript</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>

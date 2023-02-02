@@ -56,6 +56,20 @@ img {
     height: auto;
 }
 
+/*Visually hidden  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .container {
     width: 100%;
     max-width: 1366px;
@@ -82,4 +96,40 @@ img {
 /* Main content */
 .main-content {
     flex-grow: 1;
+}
+
+/* job list styles */
+.site-header {
+}
+.container {
+}
+.main-content {
+}
+.job-list {
+}
+.visually-hidden {
+}
+.job-card {
+}
+.logo-img {
+}
+.job-content {
+}
+.features-box {
+}
+.job-content-heading {
+}
+.new {
+}
+.features {
+}
+.features-link {
+}
+.time-box {
+}
+.time-text {
+}
+.btn-box {
+}
+.select-btn {
 }
