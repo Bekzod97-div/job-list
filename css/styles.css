@@ -102,9 +102,6 @@ img {
 
 /* job list styles */
 
-.job-list {
-}
-
 .job-card {
     display: flex;
     align-items: center;
@@ -114,6 +111,12 @@ img {
     box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
     border-radius: 8px;
     border-left: 5px solid var(--brand-color);
+}
+.job-card:not(:last-child) {
+    margin-bottom: 24px;
+}
+.border {
+    border: 0;
 }
 
 .job-content-box {
@@ -205,8 +208,6 @@ background-color: #000;
     content: "";
 }
 
-.btn-box {
-}
 .select-btn {
     border: transparent;
     background-color: #d5ece6;
